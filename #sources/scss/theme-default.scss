@@ -1,29 +1,27 @@
-
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900&display=swap");
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: normal;
-    font-style: normal;
-    
+	font-style: normal;
 }
 
-
-@import 'mixins.scss';
+@import "_mixins.scss";
 .img {
 	max-width: 100%;
-	@include transition(.3s);
+	@include transition(0.3s);
 }
 a,
 .button {
-@include transition(.3s);
+	@include transition(0.3s);
 }
 a:focus,
-.button:focus,button:focus {
+.button:focus,
+button:focus {
 	text-decoration: none;
 	outline: none;
 }
-a:focus{
+a:focus {
 	color: #fff;
 	text-decoration: none;
 }
@@ -32,16 +30,20 @@ a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
 	text-decoration: none;
-	color: #1F1F1F;
+	color: #1f1f1f;
 }
 a,
 button {
-	color: #1F1F1F;
+	color: #1f1f1f;
 	outline: medium none;
 }
-h1,h2,h3,h4,h5{
-	font-family: 'Raleway', sans-serif;
-	color: #1F1F1F;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Raleway", sans-serif;
+	color: #1f1f1f;
 }
 h1 a,
 h2 a,
@@ -57,15 +59,15 @@ ul {
 	padding: 0px;
 }
 li {
-	list-style: none
+	list-style: none;
 }
 p {
 	font-size: 16px;
-	font-weight:300;
+	font-weight: 300;
 	line-height: 28px;
-	color: #4D4D4D;
+	color: #4d4d4d;
 	margin-bottom: 13px;
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 label {
@@ -110,58 +112,57 @@ label {
 	opacity: 1;
 }
 
-h3{
+h3 {
 	font-size: 24px;
 }
 
-.mb-65{
+.mb-65 {
 	margin-bottom: 67px;
 }
 // default-bg-color
-.black-bg{
+.black-bg {
 	background: #020c26 !important;
 }
 
-.white-bg{
+.white-bg {
 	background: #ffffff;
 }
-.gray-bg{
+.gray-bg {
 	background: #f5f5f5;
 }
 
 // background-image
-.bg-img-1{
-    background-image: url(../img/slider/slider-img-1.jpg);
+.bg-img-1 {
+	background-image: url(../img/slider/slider-img-1.jpg);
 }
-.bg-img-2{
-    background-image: url(../img/background-img/bg-img-2.jpg);
+.bg-img-2 {
+	background-image: url(../img/background-img/bg-img-2.jpg);
 }
-.cta-bg-1{
-    background-image: url(../img/background-img/bg-img-3.jpg);
+.cta-bg-1 {
+	background-image: url(../img/background-img/bg-img-3.jpg);
+}
 
-}
-
-.overlay{
+.overlay {
 	position: relative;
 	z-index: 0;
 }
-.overlay::before{
+.overlay::before {
 	position: absolute;
 	content: "";
-	background-color: #040E27;
+	background-color: #040e27;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	opacity: .4;
+	opacity: 0.4;
 }
 
-.overlay2{
+.overlay2 {
 	position: relative;
 	z-index: 0;
 }
-.overlay2::before{
+.overlay2::before {
 	position: absolute;
 	content: "";
 	background-color: #131313;
@@ -173,11 +174,11 @@ h3{
 	opacity: 0.2;
 }
 
-.section-padding{
+.section-padding {
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
-.pt-120{
+.pt-120 {
 	padding-top: 120px;
 }
 
@@ -193,8 +194,8 @@ h3{
 		text-align: center;
 		top: 50%;
 		-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
-				transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
 		-webkit-transition: all 0.3s ease 0s;
 		-o-transition: all 0.3s ease 0s;
 		transition: all 0.3s ease 0s;
@@ -202,51 +203,36 @@ h3{
 		width: 54px;
 		font-size: 25px;
 		color: #fff;
-		background-color: rgba(255, 255, 255,0.2);
+		background-color: rgba(255, 255, 255, 0.2);
 		border-radius: 50%;
 		left: 50px;
 		font-size: 18px;
 		line-height: 54px;
 	}
-	.owl-nav{
-		div{
-			&.owl-next{
+	.owl-nav {
+		div {
+			&.owl-next {
 				// left: 86px;
 				// right: auto;
 				left: auto;
 				right: 50px;
-				i{
-					// position: relative;
-					// right: 0;
-					// top: 1px;
-				}
-			}
-			&.owl-prev{
-				i{
-					// position: relative;
-					// right: 1px;
-					// top: 0px;
-				}
 			}
 		}
 	}
-	&:hover{
-		.owl-nav{
-			div{
+	&:hover {
+		.owl-nav {
+			div {
 				opacity: 1;
 				visibility: visible;
-				&:hover{
+				&:hover {
 					color: #fff;
-					background: #009DFF;
+					background: #009dff;
 				}
 			}
 		}
 	}
 }
 
-.mb-20px{
+.mb-20px {
 	margin-bottom: 20px;
 }
-
-
-  
