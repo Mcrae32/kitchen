@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+.vacancy-slider .vacancy-slider__wrap .vacancy-slider__item h3 {
+  font-family: 'Russo One', sans-serif;
+}
+
+.title-header__text {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.vacancy-slider .vacancy-slider__wrap {
+  position: relative;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+.vacancy-slider .vacancy-slider__wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.vacancy-slider .vacancy-slider__wrap .vacancy-slider__item h3 {
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: none;
+  letter-spacing: 0.1rem;
+  margin: 15px 15px 15px;
+}
+
+.vacancy-slider .vacancy-slider__wrap .vacancy-slider__item h3 span {
+  font-size: 35px;
+  letter-spacing: -1px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.item-vacancy .price {
+  margin-bottom: 15px;
+}
+
+.item-vacancy .boxed-btn3 {
+  margin-left: -5px;
+}
+
+.modal {
+  z-index: 9999999;
+}
